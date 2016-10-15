@@ -5,7 +5,7 @@ module.exports = {
 	mongodb: {
 		url: 'mongodb://127.0.0.1:27017/club' 
 	},
-	schemeConf: path.join(__dirname,'.default.scheme') ,
+	schemaConf: path.join(__dirname,'.default.scheme') ,
 	staticCacheConf: path.join(__dirname , '../theme/publics') ,
 	renderConf: path.join(__dirname , '../theme/config') ,
 	routerConf: 'routes' ,

@@ -7,7 +7,7 @@ var session = require('koa-generic-session') ;
 var MongoStore = require('koa-generic-session-mongo') ; 
 var flash = require('koa-flash') ;
 var gzip = require('koa-gzip') ; 
-var scheme = require('koa-scheme') ; 
+var schema = require('koa-schema') ; 
 var router = require('koa-frouter') ; 
 var routerCache = require('koa-router-cache') ; 
 var render = require('co-ejs') ; 
@@ -27,7 +27,7 @@ app.use(session({
 	store: new MongoStore(config.mongodb) 
 })) ;
 app.use(flash()) ; 
-app.use(scheme(config.schemeConf)) ; 
+app.use(schema(config.schemaConf)) ; 
 app.use(routerCache(app,config.routerCacheConf)) ; 
 app.use(gzip()) ; 
 app.use(render(app,renderConf)) ; 
