@@ -8,8 +8,5 @@
 		"gravatar": "1.1.0" ,
 		"moment": "2.9.0" ,
 		"markdown-it": "4.0.3"
-	},
-	"scripts": {
-		"preinstall": "cd theme && npm install"
 	}
 }

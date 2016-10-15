@@ -1,14 +1,35 @@
 {
-	"name": "N-club" , 
-	"version": "0.0.1" , 
-	"description": "N-club for koa" ,
-	"scripts": {
-		"start":"NODE_ENV=default DEBUG=* node --harmony app"
-	},
-	"dependencies": {
-
-	},
-	"engines": {
-		"node": ">=4"
-	}
+  "name": "N-club",
+  "version": "0.0.1",
+  "description": "N-club for koa",
+  "scripts": {
+    "start": "NODE_ENV=default DEBUG=* node --harmony app"
+  },
+  "dependencies": {},
+  "engines": {
+    "node": ">=4"
+  },
+  "devDependencies": {
+    "co-cache": "^2.2.0",
+    "co-ejs": "^1.5.2",
+    "config-lite": "^1.5.0",
+    "crypto": "0.0.3",
+    "koa": "^1.2.4",
+    "koa-bodyparser": "^2.2.0",
+    "koa-errorhandler": "^0.1.1",
+    "koa-flash": "^1.0.0",
+    "koa-frouter": "^0.3.3",
+    "koa-generic-session": "^1.11.3",
+    "koa-generic-session-mongo": "^0.2.5",
+    "koa-gzip": "^0.1.0",
+    "koa-logger": "^1.3.0",
+    "koa-router": "^5.4.0",
+    "koa-router-cache": "0.3.0",
+    "koa-schema": "0.0.1",
+    "koa-scheme": "^2.2.1",
+    "koa-static-cache": "^3.1.7",
+    "merge-descriptors": "^1.0.1",
+    "mongoose": "^4.6.3",
+    "validator": "^6.0.0"
+  }
 }
